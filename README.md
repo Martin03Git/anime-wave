@@ -1,2 +1,2 @@
-# anime-web-clone_OTAKUDESU
+# ANIME WAVE
 project untuk memenuhi tugas UAS matkul web programming 1
