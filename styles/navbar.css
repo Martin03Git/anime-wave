@@ -1,0 +1,361 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    width: 100%;
+}
+
+.header{
+    width: 100%;
+    z-index: 999;
+    position: fixed;
+}
+
+.header a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* nav */
+.header .nav{
+    position: fixed;
+    margin: auto;
+    width: 100%;
+    background-color: #222;
+    height: 50px;
+    box-shadow: 0px -5px 25px 0.5px black;    
+}
+
+.header .nav .leftnav{
+    width: 62%;
+    height: 100%;
+    padding-left: 120px;
+    float: left;
+}
+
+/* logo */
+.header .nav .leftnav .namasitus{
+    height: 100%;
+    width: fit-content;
+    float: left;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.header .nav .leftnav .namasitus a:hover{
+    color: #FF3152;
+}
+
+/* menu */
+.header .nav .leftnav ul.menubar{
+    list-style: none;
+    color: #272020;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header .nav .leftnav ul li{
+    display: inline;
+    margin: 0px;
+}
+
+.header .nav .leftnav ul li a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px 0px 17px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    width: fit-content;
+}
+
+.header .nav .leftnav ul li a:hover{
+    color: #3134ff;
+}
+
+.header .nav .leftnav ul li ul.subdonasi li{
+    display: block;
+    text-align: center;
+}
+
+.header .nav .leftnav ul li:hover ul.subdonasi li a{
+    text-align: center;
+    width: fit-content;
+    display: block;
+    /* padding-top: 10px; */
+    font-size: 14px;
+}
+
+.header .nav .leftnav ul li ul.subdonasi{
+    /* width: 200%; */
+    background: #222;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    box-shadow:0px 2px 10px 0px black;
+    border-radius: 10px;
+}
+
+.header .nav .leftnav ul li:hover ul.subdonasi{
+    display: block;
+    width: 7%;
+}
+
+.header .nav .leftnav ul li ul.subdonasi ul.apa li{
+    /* width: 200%; */
+    background: #222;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    box-shadow:0px 2px 10px 0px black;
+    border-radius: 10px;
+}
+
+.header .nav .leftnav ul li:hover ul li:hover ul.apa li{
+  width: 200%;
+  background: #222;
+  position: absolute;
+  z-index: 999;
+  display: block;
+  box-shadow:0px 2px 10px 0px black;
+  border-radius: 10px;
+  left: 100px;
+  top: 115px;
+}  
+
+
+
+.header .nav .rightnav{
+    width: 30%;
+    height: 100%;
+    float: left;
+    /* padding-right: 120px; */
+    position: relative;
+}
+/* search button */
+.search {
+    top: 6px;
+    /* border: 1px solid green; */
+    position: absolute;
+    margin-top: 0;
+    border-radius: 20px;
+    /* right: 80px; */
+    left: 220px;
+    width: 27%;
+    /* width: 100%; */
+    height: 40px;
+    /* border-radius: 40px; */
+    overflow: hidden;
+    transition: 0.8s;
+}
+
+
+.search.active {
+    left: -585px;
+    width: 227%;
+    height:45px;
+    transition: 0.00000000000001s;
+}
+
+.search .boxicon{
+    width: 50px;
+    height: 50px;
+}
+
+.search.active .boxicon{
+    width: 50px;
+    height: 50px;
+    display: flex;
+}
+
+.search .icon:hover, .search.active .icon:hover {
+    background-color: #327fff;
+}
+
+.search .icon {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background: #FF3152;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.search .icon::before {
+    top: 22px;
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    transform: translate(-1px,-10px);
+    cursor: pointer;
+}
+
+.search .icon::after {
+    top: 0px;
+    content: '';
+    position: absolute;
+    width: 2.5px;
+    height: 6px;
+    background:#fff;
+    transform: translate(5px,23px) rotate(315deg);
+}
+
+.search.active .icon {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background: #FF3152;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.search.active .icon::before {
+    top: 5px;
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 15px;
+  width: 3px;
+  background-color: #fff;
+  border-radius: 0%;
+  border: none;
+    transform: translate(3px,8px) rotate(-315deg);
+}
+
+.search.active .icon::after {
+    top: 5px;
+    position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 15px;
+  width: 3px;
+  background-color: #fff;
+    transform: translate(3px,8px) rotate(315deg);
+}
+
+.search .input {
+    position: relative;
+    width: 100px;
+    left: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search .input input {
+    position: absolute;
+    margin-top: -50px;
+    top: 0px;
+    left: 450;
+    width: 910px;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background-color: #333;
+    color: white;
+    margin-left: 4000px;
+    padding-left: 10px;
+    border-radius: 20px;
+    transition: .8s;
+}
+
+.search.active .input input{
+    margin-top: -50px;
+    margin-left: 820px;
+    transition: .3s;
+}
+
+
+
+/* dark mode button */
+
+.search.active input[type="checkbox"]{
+    display: none;
+}
+
+input[type="checkbox"] {
+    top: 15px;
+    right: -25px;
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    appearance: none;
+    margin-right: 50px;
+    background-color: #434343;
+    outline: none;
+    border-radius: 10px;
+    transition: .5 ease;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #fff;
+}
+
+input[type="checkbox"]::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: .5s ease;
+}
+
+input[type="checkbox"]:checked::before {
+    background-color: #222;
+    transform: translateX(20px);
+}
+
+
+
+
+
+
+
+/* login */
+
+.login-btn {
+    background-color: #00ADFF;
+    text-align: center;
+    padding: 5px 10px 5px 10px;
+    float: left;
+    border-radius: 5px;
+    margin: 12px 25px 5px 5px;
+    cursor: pointer;
+  }
+
+.login-btn:hover {
+  background-color: #FF3152;
+}
+
+  .login-btn a {
+    width: 100%;
+    height: 100%;
+  }
+  

@@ -1,0 +1,559 @@
+@import url(navbar.css);
+@import url(darkmode.css);
+
+
+* {
+  padding: 0px;
+  margin: 0px;
+  color: white;
+  box-sizing: border-box;
+  font-family: 'Inter', Arial, sans-serif;
+  /* border: 1px solid rgb(238, 255, 0); */
+}
+
+body {
+  background-color: #151515;
+}
+
+.clear {
+  clear: both;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  background-color: #151515;
+}
+
+
+
+/* home */
+
+hr {
+  margin: 5px auto;
+  height: 2px;
+  border: none;
+  background-color: #00ADFF;
+}
+
+.conten {
+  width: 80%;
+  background-color: #222222;
+  padding: 70px 10px 10px 10px;
+  margin: 0px auto 0px auto;
+}
+
+.home img{
+  transform: 0.5 ease;
+  cursor: pointer;
+}
+
+.home img:hover{
+  transform: scale(1.1);
+}
+
+.card_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  margin: 5px;
+  background-color: #333;
+  border-radius: 10px;
+  width: 245px;
+  height: 175px;
+}
+
+.card p{
+  color: #fff;
+}
+.card .wrapper-img {
+  width: 240px;
+  height: 130px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card .wrapper-img img:active{
+  filter: grayscale(40%);
+}
+
+.card .wrapper-img img {
+  width: 240px;
+  height: 130px;
+  border-radius: 10px;
+}
+
+.info {
+  padding: 5px 5px 10px 10px;
+}
+
+.info p {
+  font-size: small;
+}
+
+.info .nama_anime b{
+color: white;
+}
+
+.info .nama_anime b:hover{
+  color: #FF3152;
+}
+
+
+
+
+
+
+
+
+
+
+/* anime list */
+
+.nav-anime {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav-anime a {
+  text-decoration: none;
+}
+
+.nav-anime a:hover {
+  color: #FF3152;
+}
+
+.nav-anime .abj {
+  border: 1.5px solid #00ADFF;
+  padding: 3px;
+  font-size: smaller;
+  text-align: center;
+  width: 35px;
+  height: 25px;
+  transition: 0.3s;
+}
+
+.nav-anime .abj b{
+  color: white;
+}
+
+.nav-anime .abj:hover{
+  background-color: #FF3152;
+}  
+
+.conten .list {
+  padding: 5px;
+  border-bottom: 1px solid #00ADFF;
+  margin: 10px 0px;
+  color: #fff;
+}
+
+ul.list-anime {
+  padding: 10px 20px;
+  margin-left: 0px;
+}
+
+ul.list-anime li {
+  padding: 2px;
+}
+
+ul.list-anime li a:hover{
+  color: #FF3152;
+}
+
+
+
+
+
+
+
+
+/* stream anime */
+
+.stream a:hover{
+  color: #FF3152;
+}
+
+.judul {
+  padding: 5px;
+  border-left: 4px solid #00ADFF;
+  background-color: #333333;
+}
+
+.judul h4,p{
+  color: #fff;
+}
+
+.play {
+  width: 100%;
+  /* height: 480px; */
+  margin: 25px auto;
+}
+
+video {
+  width: 100%;
+  height: 720px;
+}
+
+.resolusi {
+  width: 720px;
+  height: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+}
+
+.resolusi a {
+  width: 33%;
+  text-align: center;
+  padding: 3px;
+  background-color: #00ADFF;
+  line-height: 27px;
+}
+
+.resolusi a:hover {
+  background-color: #FF3152;
+}
+
+.sub-info {
+  width: 100%;
+  padding: 5px;
+  background-color: #333333;
+}
+
+.sub-judul {
+  width: 100%;
+  padding: 4px 4px 4px 8px;
+  border-left: 4px solid #00ADFF;
+  margin: 0px 0px 15px 0px;
+  background-color: #333333;
+}
+
+.sub-info .poster {
+  width: 196px;
+  height: 266px;
+  padding: 1px;
+  float: left;
+  border: 1px solid white;
+}
+
+.sub-info img {
+  width: 190px;
+  height: 260px;
+  margin: 1px;
+}
+
+.sub-info table {
+  width: 79%;
+  height: 270px;
+  float: right;
+
+}
+
+.sub-info table .eps {
+  width: 100%;
+  height: 130px;
+  padding: 5px;
+  background-color: #222222;
+  border: 3px solid #00ADFF;
+}
+
+.sub-info table .eps .list-eps {
+  width: 100%;
+  height: 128px;
+  overflow: auto;
+}
+
+.sub-info table .eps .list-eps li {
+  padding: 2px;
+}
+
+.slider {
+  display: flex;
+  width: 80%;
+  margin: 10px auto;
+  border: 1px solid #00ADFF;
+  overflow-x: auto;
+}
+
+.slide-anime {
+  flex: 0 0 auto;
+  width: 100px;
+  /* height: 130px; */
+  margin: 5px;
+  background-color: #333;
+}
+
+.slide-anime img {
+  width: 100px;
+  height: 130px;
+}
+
+.slide-anime p {
+  width: 100%;
+  height: fit-content;
+  text-align: center;
+}
+
+.sinopsis{
+  padding: 20px 5px;
+}
+
+.sinopsis p{
+  color: white;
+}
+
+.daftar-eps{
+  width: 100%;
+  height: 100%;
+  padding: 4px 4px 4px 8px;
+  margin: 0px 0px 15px 0px;
+  background-color: #00ADFF;
+}
+
+.eps-list{
+  width: 100%;
+  height: 740px;
+}
+
+.eps-list .main{
+  float: left;
+  width: 85%;
+}
+
+.eps-list .main .eps{
+  width: 100%;
+  padding: 4px 4px 4px 8px;
+  margin: 0px 0px 5px 0px;
+  background-color: #4d4c4c;
+  border-left: 4px solid #00ADFF;
+}
+
+.eps-list .tgl{
+  width: 15%;
+  float: right;
+}
+
+.eps-list .tgl .eps{
+  width: 100%;
+  padding: 4px 4px 4px 50px;
+  margin: 0px 0px 5px 0px;
+  background-color: #4d4c4c;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Ruby Cahyadi */
+
+/* Genre */
+
+
+.genre li {
+  float: left;
+  width: calc(50% - 6px);
+  text-align: center;
+  border-radius: 4px;
+  background-color: #151515;
+  /* position:relative; */
+  margin: 3px
+}
+
+.genre ul {
+  list-style: none;
+  margin: 0 -5px;
+  padding: 0
+}
+
+.genre ul:after {
+  content: "";
+  display: block;
+  clear: both
+}
+
+.genre li a {
+  display: block;
+  color: #fff;
+  /* z-index:10; */
+  /* position:relative; */
+  padding: 9px;
+  font-weight: 700;
+  width: 100%;
+  height: 100%;
+}
+
+/* .genre li a:before {  */
+/* content:""; */
+/* position:absolute; */
+/* background:#353638 center no-repeat; */
+/* background-size:100%; */
+/* top:0; */
+/* left:0; */
+/* filter:grayscale(1) opacity(.6); */
+/* z-index:10 */
+/* } */
+
+/* .genre li a:after {  */
+/* content:""; */
+/* position:absolute; */
+/* background:#000; */
+/* width:100%; */
+/* height:100%; */
+/* top:0; */
+/* left:0; */
+/* z-index:5; */
+/* } */
+
+.genre li a:hover {
+  background-color: #333;
+  border-radius: 4px;
+  /* filter:grayscale(0) opacity(.7); */
+}
+.genre li a:hover span{
+  color: #FF3152;
+}
+
+/* 
+.genre li a span { 
+  display:block;
+  /* position:relative; */
+/* z-index:12; */
+/*} */
+
+
+/* donasi */
+.donasi h1{
+  color: #fff ;
+}
+
+.donasi a{
+  color: #fff;
+}
+
+.donasi .post-body span{
+  color: #fff;
+}
+
+.donasi .post-body i{
+  color: #fff;
+}
+
+.donasi .post-body b{
+  color: #fff;
+}
+
+.donasi .post-body img{
+  border: 1px #fff solid;
+}
+
+
+
+
+
+
+
+
+/* login  */
+
+.login {
+  width: 35%;
+
+  margin: 100px auto 130px;
+}
+
+.login h2 {
+  background-color: #00ADFF;
+  padding: 20px 25px;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+}
+
+.login #form_id {
+  padding: 10px;
+  border-radius: 0px 0px 10px 10px;
+  background-color: #333333;
+
+}
+
+.login input[type=text],
+.login input[type=password] {
+  outline: 0;
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+  margin-bottom: 25px;
+  margin-top: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #666;
+}
+
+.login input[type="text"]:focus,
+.login input[type="password"]:focus {
+  border-color: #00ADFF;
+}
+
+.login input[type=submit] {
+  font-size: 16px;
+  background: linear-gradient(#00ADFF 5%, #56c6fa 100%);
+  border: #00ADFF;
+  color: #222222;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px 0;
+  outline: none;
+}
+
+.login input[type=submit]:hover {
+  background: linear-gradient(#56c6fa 5%, #00ADFF 100%);
+}
+
+
+
+
+
+
+
+
+/* footer */
+footer{
+  height: 50px;
+  color: #fff;
+  font-size: small;
+  box-shadow:0px 2px 15px 0px black;
+}
+
+footer .footerbar{
+  line-height: 50px;
+  justify-items: center;
+  text-align: center;
+}
+
+footer a{
+  text-decoration: none;
+  padding: auto;
+  color: #fff;
+}
+
+footer a:hover{
+  color: #FF3152;
+}
